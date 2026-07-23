@@ -1,6 +1,13 @@
 async function api() {
     try {
+        document.getElementById("users").innerHTML =
+
+            "<h2>Loading users...</h2>";
+
         const data = await fetch("https://dummyjson.com/users");
+        if (!data.ok) {
+            throw new Error("API request failed");
+        }
         const result = await data.json();
 
         let output = "";
