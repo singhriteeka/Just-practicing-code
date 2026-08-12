@@ -8,11 +8,12 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import UseState from './UseState.jsx'
 import UseEffect from './UseEffect.jsx'
+import UseEffect1 from './UseEffect1.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <UseEffect />
+      <UseEffect1 />
     </BrowserRouter>
   </StrictMode>
 )
